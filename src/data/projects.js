@@ -22,7 +22,7 @@ export const projectsData = [
 		title: 'Kinmatech Portfolio Web App',
 		category: 'Web Application',
 		img: WebImage2,
-		url: <Link to = 'https://kinmatech-online-store.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmatech.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
 	},
 	{
 		id: 3,
