@@ -10,6 +10,7 @@ import emailjs from '@emailjs/browser';
   
   emailjs.sendForm('service_8f3gcdf', 'template_168vukh', e.target, 'HIj1SmhDu2N20_kJy')
       .then((result) => {
+		window.alert ('E-Mail sent successfully, we will get back to you soon');
           console.log('SUCCESS');
       }, (error) => {
           console.log('FAILED...', error);
