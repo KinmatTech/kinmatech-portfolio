@@ -1,6 +1,24 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
+import React from 'react';
+import emailjs from '@emailjs/browser';
+
+
+    function sendEmail(e) {
+    e.preventDefault();
+  
+  
+  emailjs.sendForm('service_8f3gcdf', 'template_168vukh', e.target, 'HIj1SmhDu2N20_kJy')
+      .then((result) => {
+		window.alert ('Message recieved, will get back to you soon!');
+          //console.log('SUCCESS');
+      }, (error) => {
+        //   console.log('FAILED...', error);
+		window.alert ('Message failed! try again...');
+      });
+      e.target.reset()
+  };
 
 const selectOptions = [
 	'Web Application',
@@ -36,10 +54,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 							</button>
 						</div>
 						<div className="modal-body p-5 w-full h-full">
-							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+						<form onSubmit={sendEmail}
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -48,10 +63,9 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										id="name"
 										name="name"
 										type="text"
-										required=""
 										placeholder="Name"
 										aria-label="Name"
-									/>
+									required/>
 								</div>
 								<div className="mt-6">
 									<input
@@ -59,18 +73,16 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										id="email"
 										name="email"
 										type="text"
-										required=""
 										placeholder="Email"
 										aria-label="Email"
-									/>
+									required/>
 								</div>
 								<div className="mt-6">
 									<select
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
-										type="text"
-										required=""
+										type="text"										
 										aria-label="Project Category"
 									>
 										{selectOptions.map((option) => (
@@ -93,26 +105,21 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										rows="6"
 										aria-label="Details"
 										placeholder="Project description"
-									></textarea>
+									required></textarea>
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<span
-										onClick={onClose}
-										type="submit"
-										className="px-4
-											sm:px-6
-											py-2
-											sm:py-2.5
-											text-white
-											bg-indigo-500
-											hover:bg-indigo-600
-											rounded-md
-											focus:ring-1 focus:ring-indigo-900 duration-500"
-										aria-label="Submit Request"
-									>
-										<Button title="Send Request" />
-									</span>
+								<span
+								type="submit"
+								className="px-4
+									sm:px-6
+									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-secondary-200 dark:text-secondary-dark dark:hover:bg-primary-light
+									rounded-md
+									focus:ring-1 focus:ring-indigo-900 duration-500"
+								aria-label="Send Request"
+							>
+								<Button title="Send Request" />
+							</span>
 								</div>
 							</form>
 						</div>

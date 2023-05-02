@@ -6,14 +6,14 @@ import emailjs from '@emailjs/browser';
 
     function sendEmail(e) {
     e.preventDefault();
-  
-  
-  emailjs.sendForm('service_8f3gcdf', 'template_168vukh', e.target, 'HIj1SmhDu2N20_kJy')
+	
+    emailjs.sendForm('service_8f3gcdf', 'template_168vukh', e.target, 'HIj1SmhDu2N20_kJy')
       .then((result) => {
 		window.alert ('E-Mail sent successfully, we will get back to you soon');
-          console.log('SUCCESS');
+          //console.log('SUCCESS');
       }, (error) => {
-          console.log('FAILED...', error);
+        //   console.log('FAILED...', error);
+		window.alert ('Message failed! try again...');
       });
       e.target.reset()
   };
