@@ -1,14 +1,27 @@
 import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
+import React from 'react';
+import emailjs from '@emailjs/browser';
+
+
+    function sendEmail(e) {
+    e.preventDefault();
+  
+  
+  emailjs.sendForm('service_8f3gcdf', 'template_168vukh', e.target, 'HIj1SmhDu2N20_kJy')
+      .then((result) => {
+          console.log('SUCCESS');
+      }, (error) => {
+          console.log('FAILED...', error);
+      });
+      e.target.reset()
+  };
 
 const ContactForm = () => {
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
-				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
+				<form onSubmit={sendEmail}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
