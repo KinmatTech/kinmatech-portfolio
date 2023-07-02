@@ -11,7 +11,7 @@ const socialLinks = [
 	{
 		id: 1,
 		icon: <FiGlobe />,
-		url: 'https://www.kinmatech.com.ng/',
+		url: 'https://www.kinmatech.com.ng/',  
 	},
 	{
 		id: 2,

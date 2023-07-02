@@ -6,6 +6,7 @@ import WebImage3 from '../images/3.jpg';
 import WebImage4 from '../images/4.jpg';
 import WebImage5 from '../images/5.jpg';
 import WebImage6 from '../images/6.jpg';
+import WebImage7 from '../images/7.jpg';
 
 export const projectsData = [
 	{
@@ -13,7 +14,7 @@ export const projectsData = [
 		title: 'Kinmat Store - Amazone Clone App',
 		category: 'Web Application',
 		img: WebImage1,
-		url: <Link to = 'https://kinmatech-online-store.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmatech-online-store.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 			// publishDate: 'Jul 26, 2021',
 			// tags: 'UI / Frontend',
 	},
@@ -22,28 +23,28 @@ export const projectsData = [
 		title: 'Kinmatech Portfolio Web App',
 		category: 'Web Application',
 		img: WebImage2,
-		url: <Link to = 'https://kinmatech.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmatech.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 	},
 	{
 		id: 3,
 		title: 'Kinmat TODO Task Manager Web App',
 		category: 'Web Application',
 		img: WebImage3,
-		url: <Link to = 'https://kinmat-task-manager.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmat-task-manager.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 	},
 	{
 		id: 4,
 		title: 'Kinmat Analogue Clock App',
 		category: 'Web Application',
 		img: WebImage4,
-		url: <Link to = 'https://kinmat-react-analogue-clock.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmat-react-analogue-clock.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 	},
 	{
 		id: 5,
 		title: 'Kinmat Task Reminder Digital Web App',
 		category: 'Web Application',
 		img: WebImage5,
-		url: <Link to = 'https://kinmat-task-reminder-app.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmat-task-reminder-app.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 		
 	},
 	{
@@ -51,7 +52,16 @@ export const projectsData = [
 		title: 'Kinmat Tinder Clone Web App',
 		category: 'Web Application',
 		img: WebImage6,
-		url: <Link to = 'https://kinmat-tinder-clone.vercel.app'><strong><h2 align="center">View Project</h2></strong></Link>
+		url: <Link to = 'https://kinmat-tinder-clone.vercel.app' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
+		
+
+	},
+	{
+		id: 7,
+		title: 'Kinmat Tesla Clone App',
+		category: 'Web Application',
+		img: WebImage7,
+		url: <Link to = 'https://kinmat-tesla-clone.vercel.app/' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 		
 
 	},
