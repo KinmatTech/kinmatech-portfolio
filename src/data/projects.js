@@ -8,6 +8,7 @@ import WebImage5 from '../images/5.jpg';
 import WebImage6 from '../images/6.jpg';
 import WebImage7 from '../images/7.jpg';
 import WebImage8 from '../images/8.jpg';
+import WebImage9 from '../images/9.jpg';
 // import WebImage9 from '../images/9.jpg'; 
 
 export const projectsData = [
@@ -77,13 +78,13 @@ export const projectsData = [
 
 	},
 
-	// {
-	// 	id: 9,
-	// 	title: 'Kinmatech Online School App',
-	// 	category: 'Web Application',
-	// 	img: WebImage8,
-	// 	url: <Link to = 'https://kinmatech-online-school.vercel.app/' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
+	{
+		id: 9,
+		title: 'Kinmat Crud App',
+		category: 'Web Application',
+		img: WebImage9,
+		url: <Link to = 'https://kinmatcrudapp.vercel.app/' target='_blank'><strong><h2 align="center">View Project</h2></strong></Link>
 		
 
-	// },
+	},
 ];
